@@ -1,0 +1,14 @@
+[packages]
+system = []
+
+common = [
+    "atuin",
+    "bat",
+    "direnv",
+    "fish",
+    "keychain",
+    "kitty",
+    "lsd",
+    "starship",
+    "zoxide",
+]
