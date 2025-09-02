@@ -1,0 +1,9 @@
+#!/bin/bash
+
+PACKAGES=()
+{{ range .packages.common -}}
+#sudo pacman -S --needed --noconfirm {{ . | quote }}
+PACKAGES+=({{ . | quote }})
+{{ end -}}
+
+sudo pacman -S --needed --noconfirm ${PACKAGES[@]}
