@@ -37,8 +37,8 @@ if status is-interactive; and test (uname) = Linux
         | source
 end
 
-set PATH $PATH /home/gwen/.local/bin
+set PATH $PATH ~/.local/bin
 set PATH $PATH /opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin
-set PATH $PATH /home/gwen/.cargo/bin
+set PATH $PATH ~/.cargo/bin
 
 direnv hook fish | source
