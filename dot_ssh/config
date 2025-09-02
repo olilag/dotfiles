@@ -1,0 +1,23 @@
+
+Host webik
+    HostName webik.ms.mff.cuni.cz
+    User 38613013
+    Port 42222
+    IdentityFile "/home/gwen/.ssh/webik"
+
+Host nswi200
+    HostName lab.d3s.mff.cuni.cz
+    User lagoo
+    Port 22200
+
+Host parlab
+	HostName parlab.ms.mff.cuni.cz
+	User lagoo
+	Port 42222
+	IdentityFile "/home/gwen/.ssh/id_rsa"
+
+Host gpulab
+	HostName gpulab.ms.mff.cuni.cz
+	User lagoo
+	Port 42222
+	IdentityFile "/home/gwen/.ssh/id_rsa"
