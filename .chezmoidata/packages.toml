@@ -1,5 +1,5 @@
 [packages]
-system = []
+system = ["gopass"]
 
 common = [
     "atuin",
