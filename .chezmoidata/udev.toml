@@ -1,0 +1,5 @@
+[udev]
+symlinks = [
+    { vendor = "AMD", alias = "amd-igpu" },
+    { vendor = "NVIDIA", alias = "nvidia-dgpu" },
+]
