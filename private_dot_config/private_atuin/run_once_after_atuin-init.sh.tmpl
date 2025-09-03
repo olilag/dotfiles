@@ -1,0 +1,4 @@
+#!/bin/bash
+
+atuin login -u gwen -p {{ gopass "atuin/password" | quote }} -k {{ gopass "atuin/key" | quote }}
+atuin sync
