@@ -2,8 +2,9 @@
 
 PACKAGES=()
 {{ range .packages.system -}}
-#sudo pacman -S --needed --noconfirm {{ . | quote }}
 PACKAGES+=({{ . | quote }})
 {{ end -}}
 
-sudo pacman -S --needed --noconfirm ${PACKAGES[@]}
+if [ -n "$PACKAGES" ]; then
+    sudo pacman -S --needed --noconfirm ${PACKAGES[@]}
+fi
