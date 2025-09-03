@@ -22,3 +22,5 @@
 	recurse = true
 [push]
 	recurseSubmodules = on-demand
+[rerere]
+	enabled = true
