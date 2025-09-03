@@ -1,6 +1,7 @@
 [packages]
 system = [
     "brightnessctl",
+    "gnome-keyring",
     "greetd-regreet",
     "greetd",
     "grimblast-git",
@@ -16,6 +17,7 @@ system = [
     "nautilus",
     "network-manager-applet",
     "uwsm",
+    "waybar",
     "wob",
     "wofi",
 ]
@@ -25,6 +27,7 @@ common = [
     "bat",
     "direnv",
     "fish",
+    "hyfetch",
     "keychain",
     "lsd",
     "starship",
