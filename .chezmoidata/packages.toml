@@ -1,5 +1,24 @@
 [packages]
-system = []
+system = [
+    "brightnessctl",
+    "greetd-regreet",
+    "greetd",
+    "grimblast-git",
+    "hypridle",
+    "hyprland",
+    "hyprlang",
+    "hyprlock",
+    "hyprpaper",
+    "hyprpolkitagent",
+    "hyprsunset",
+    "kitty",
+    "mako",
+    "nautilus",
+    "network-manager-applet",
+    "uwsm",
+    "wob",
+    "wofi",
+]
 
 common = [
     "atuin",
@@ -7,7 +26,6 @@ common = [
     "direnv",
     "fish",
     "keychain",
-    "kitty",
     "lsd",
     "starship",
     "zoxide",
