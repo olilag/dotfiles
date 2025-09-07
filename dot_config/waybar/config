@@ -147,7 +147,7 @@
         "format": "󰥔 {:%H:%M \n%e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>",
-        "on-click": "gnome-calendar"
+        "on-click": "uwsm app -- gnome-calendar"
     },
     "cpu": {
         "interval": 1,
