@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PACKAGES=()
+{{ range .packages.fonts -}}
+PACKAGES+=({{ . | quote }})
+{{ end -}}
+
+if [ -n "$PACKAGES" ]; then
+    sudo pacman -S --needed --noconfirm ${PACKAGES[@]}
+fi
