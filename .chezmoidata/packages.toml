@@ -1,13 +1,15 @@
 [packages]
 system = [
+    "blueman",
+    "bluez",
     "brightnessctl",
-    "docker",
     "docker-buildx",
     "docker-compose",
+    "docker",
     "gnome-keyring",
     "greetd-regreet",
     "greetd",
-    "grimblast-git",
+    "grimblast-git",          # add logic to download from aur on arch
     "hypridle",
     "hyprland",
     "hyprlang",
@@ -18,6 +20,10 @@ system = [
     "mako",
     "nautilus",
     "network-manager-applet",
+    "pipewire-alsa",
+    "pipewire-audio",
+    "pipewire-pulse",
+    "pipewire",
     "uwsm",
     "waybar",
     "wob",
