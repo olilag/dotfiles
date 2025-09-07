@@ -6,6 +6,8 @@ system = [
     "docker-buildx",
     "docker-compose",
     "docker",
+    "gnome-calendar",
+    "gnome-control-center",
     "gnome-keyring",
     "greetd-regreet",
     "greetd",
