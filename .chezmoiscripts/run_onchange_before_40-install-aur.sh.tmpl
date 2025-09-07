@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PACKAGES=()
+{{ range .packages.aur -}}
+PACKAGES+=({{ . | quote }})
+{{ end -}}
+
+if [ -n "$PACKAGES" ]; then
+    paru -S --needed --noconfirm ${PACKAGES[@]}
+fi

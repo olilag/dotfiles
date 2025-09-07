@@ -23,6 +23,7 @@ system = [
     "mako",
     "nautilus",
     "network-manager-applet",
+    "paru-bin",               # add logic to install from source on arch
     "pipewire-alsa",
     "pipewire-audio",
     "pipewire-pulse",
@@ -39,6 +40,7 @@ common = [
     "bat",
     "btop",
     "direnv",
+    "discord",
     "fish",
     "hyfetch",
     "inkscape",
@@ -52,3 +54,5 @@ common = [
 ]
 
 fonts = ["otf-firamono-nerd", "otf-font-awesome", "ttf-firacode-nerd"]
+
+aur = ["slack-desktop-wayland"]
