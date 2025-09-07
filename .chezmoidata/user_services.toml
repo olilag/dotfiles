@@ -1,11 +1,10 @@
 [services]
 user = [
-    "greetd",
     "hypridle.service",
-    "hyprlock.service",
     "hyprpaper.service",
     "hyprpolkitagent.service",
     "hyprsunset.service",
     "mako.service",
     "waybar.service",
 ]
+system = ["docker.socket", "greetd"]

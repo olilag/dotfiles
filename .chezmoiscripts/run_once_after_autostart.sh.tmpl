@@ -3,3 +3,7 @@
 {{ range .services.user -}}
 systemctl --user enable {{ . }}
 {{ end -}}
+
+{{ range .services.system -}}
+sudo systemctl enable {{ . }}
+{{ end -}}

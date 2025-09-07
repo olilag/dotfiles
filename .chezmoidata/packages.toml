@@ -1,6 +1,9 @@
 [packages]
 system = [
     "brightnessctl",
+    "docker",
+    "docker-buildx",
+    "docker-compose",
     "gnome-keyring",
     "greetd-regreet",
     "greetd",
