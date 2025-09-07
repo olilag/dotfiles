@@ -28,11 +28,13 @@ system = [
     "waybar",
     "wob",
     "wofi",
+    "xsensors",
 ]
 
 common = [
     "atuin",
     "bat",
+    "btop",
     "direnv",
     "fish",
     "hyfetch",
@@ -42,3 +44,5 @@ common = [
     "starship",
     "zoxide",
 ]
+
+fonts = ["otf-firamono-nerd", "otf-font-awesome", "ttf-firacode-nerd"]
