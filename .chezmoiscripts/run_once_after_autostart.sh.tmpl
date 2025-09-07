@@ -1,9 +1,9 @@
 #!/bin/bash
 
 {{ range .services.user -}}
-systemctl --user enable {{ . }}
+systemctl --user enable --now {{ . }}
 {{ end -}}
 
 {{ range .services.system -}}
-sudo systemctl enable {{ . }}
+sudo systemctl enable --now {{ . }}
 {{ end -}}
