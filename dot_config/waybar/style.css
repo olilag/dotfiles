@@ -75,19 +75,13 @@ window#waybar.hidden {
 #battery,
 #cpu,
 #memory,
-#disk,
 #temperature,
+#language,
 #backlight,
 #network,
-#pulseaudio,
 #wireplumber,
-#custom-media,
-#mode,
 #idle_inhibitor,
-#mpd,
-#bluetooth,
-#custom-hyprPicker,
-#custom-power-menu,
+#custom-pacman,
 #custom-spotify,
 #custom-weather,
 #custom-weather.severe,
@@ -103,12 +97,6 @@ window#waybar.hidden {
     background-color: #111827;
     border-radius: 14px;
     padding: 6px;  /* Adjusted padding */
-}
-
-#custom-screenshot_t {
-    background-color: #111827;
-    border-radius: 14px;
-    padding: 6px;
 }
 
 #custom-spotify {
@@ -139,19 +127,6 @@ window#waybar.hidden {
     background-color: #111827;
     border-radius: 14px;
     padding: 6px;
-}
-
-#custom-storage {
-    background-color: #111827;
-    border-radius: 14px;
-    padding: 6px;
-}
-
-#custom-launcher {
-    background-color: #1b242b;
-    color: #6a92d7;
-    border-radius: 7.5px;
-    padding: 3px 6px;  /* Adjusted padding */
 }
 
 #custom-weather.severe {
@@ -195,10 +170,6 @@ window#waybar.hidden {
     margin-right: 0;
 }
 
-#pulseaudio {
-    color: #7d9bba;
-}
-
 #backlight {
     color: #8fbcbb;
 }
@@ -237,38 +208,12 @@ label:focus {
     background-color: #000000;
 }
 
-#disk {
-    background-color: #964b00;
-}
-
-#bluetooth {
-    color: #707d9d;
-}
-
-#bluetooth.disconnected {
-    color: #f53c3c;
-}
-
 #network {
     color: #b48ead;
 }
 
 #network.disconnected {
     color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
 }
 
 #temperature {
@@ -298,25 +243,6 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
     color: #740864;
-    padding: 0 0px;
-    margin: 0 5px;
     min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 0px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
 }
