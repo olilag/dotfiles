@@ -55,4 +55,4 @@ common = [
 
 fonts = ["otf-firamono-nerd", "otf-font-awesome", "ttf-firacode-nerd"]
 
-aur = ["slack-desktop-wayland"]
+aur = ["slack-desktop-wayland", "xdg-terminal-exec"]
