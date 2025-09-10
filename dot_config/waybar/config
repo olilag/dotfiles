@@ -144,7 +144,7 @@
         "on-click": "wlogout"
     },
     "clock#date": {
-        "format": "󰥔 {:%H:%M \n%e %b}",
+        "format": "󰥔 {:%H:%M \n %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>",
         "on-click": "uwsm app -- gnome-calendar"
@@ -184,10 +184,10 @@
     "wireplumber": {
         "on-click": "pavucontrol",
         "on-click-right": "amixer sset Master toggle 1>/dev/null",
-        "format": "<span foreground='#fab387'>{format_source} {icon} </span>{volume}%",
-        "format-muted": "󰝟",
-        "format-source": "",
-        "format-source-muted": "",
+        "format": "{format_source} <span foreground='#fab387'>{icon} </span>{volume}%",
+        "format-muted": "{format_source} <span foreground='#f63932ff'>󰝟</span> ",
+        "format-source": "<span foreground='#fab387'></span>",
+        "format-source-muted": "<span foreground='#f63932ff'></span>",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
