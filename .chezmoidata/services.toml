@@ -1,5 +1,6 @@
 [services]
 user = [
+    "docker.socket",
     "hypridle.service",
     "hyprpaper.service",
     "hyprpolkitagent.service",
@@ -7,4 +8,4 @@ user = [
     "mako.service",
     "waybar.service",
 ]
-system = ["docker.socket", "greetd"]
+system = ["greetd"]
