@@ -1,0 +1,8 @@
+#!/bin/bash
+
+{{ if eq .gpu_mode "integrated"}}
+yes | sudo envycontrol -s integrated
+{{ else if eq .gpu_mode "hybrid" }}
+yes | sudo envycontrol -s hybrid --rtd3
+{{ else }}
+{{ end }}

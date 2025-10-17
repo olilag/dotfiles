@@ -1,9 +1,12 @@
 {{ $email := promptStringOnce . "email" "What is your email address" -}}
-{{ $fullName := promptStringOnce . "fullName" "What is your full name" -}}
+{{ $fullName := promptStringOnce . "full_name" "What is your full name" -}}
+{{- $gpuModes := list "integrated" "hybrid" -}}
+{{- $gpuMode := promptChoice "What GPU mode to use" $gpuModes -}}
 
 [data]
 email = {{ $email | quote }}
 full_name = {{ $fullName | quote }}
+gpu_mode = {{ $gpuMode | quote }}
 
 [hooks.read-source-state.pre]
 command = ".local/share/chezmoi/.install-password-manager.sh"
