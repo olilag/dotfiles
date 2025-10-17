@@ -40,6 +40,7 @@ end
 set PATH $PATH ~/.local/bin
 set PATH $PATH /opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin
 set PATH $PATH ~/.cargo/bin
+set PATH $PATH ~/.dotnet/tools
 set -gx EDITOR micro
 
 direnv hook fish | source
