@@ -37,10 +37,22 @@ if status is-interactive; and test (uname) = Linux
         | source
 end
 
-set PATH $PATH ~/.local/bin
-set PATH $PATH /opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin
-set PATH $PATH ~/.cargo/bin
-set PATH $PATH ~/.dotnet/tools
+fish_add_path ~/.local/bin /opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin ~/.cargo/bin ~/.dotnet/tools
+
 set -gx EDITOR micro
 
 direnv hook fish | source
+
+# source /etc/profile
+if status is-login
+    if not set -q __sourced_profile
+        set -x __sourced_profile 1
+        exec bash -c "\
+            test -e /etc/profile && source /etc/profile
+            test -e $HOME/.bash_profile && source $HOME/.bash_profile
+            exec fish --login
+        "
+    end
+    
+    set -e __sourced_profile
+end
