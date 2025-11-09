@@ -31,28 +31,27 @@ if status is-interactive; and test (uname) = Linux
         ~/.ssh/id_ed25519 \
         ~/.ssh/webik
 
-# Define GPG key identifiers
+    # Define GPG key identifiers
     set GPG_PRIVATE_KEYS
     SHELL=fish keychain --quiet --eval $SSH_PRIVATE_KEYS $GPG_PRIVATE_KEYS \
         | source
 end
 
-fish_add_path ~/.local/bin /opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin ~/.cargo/bin ~/.dotnet/tools
+fish_add_path ~/.local/bin /opt/gcc/gcc-arm-none-eabi-10.3-2021.10/bin ~/.cargo/bin ~/.dotnet/tools ~/.local/bin
 
 set -gx EDITOR micro
 
 direnv hook fish | source
 
 # source /etc/profile
-if status is-login
+if status is-interactive
     if not set -q __sourced_profile
         set -x __sourced_profile 1
-        exec bash -c "\
+        bash -c "\
             test -e /etc/profile && source /etc/profile
             test -e $HOME/.bash_profile && source $HOME/.bash_profile
-            exec fish --login
         "
     end
-    
+
     set -e __sourced_profile
 end
