@@ -16,7 +16,7 @@ abbr --add dotdot --regex '^\.\.+$' --function multicd
 alias ls="lsd --color=auto"
 alias ll="ls -l -g --icon=always"
 alias lla="ll -a"
-alias update="paru -Syu --devel"
+alias update="paru -Syu"
 alias d="kitten diff"
 alias icat="kitten icat"
 alias s="kitten ssh"
