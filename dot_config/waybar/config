@@ -185,7 +185,7 @@
         "on-click": "pavucontrol",
         "on-click-right": "amixer sset Master toggle 1>/dev/null",
         "format": "{format_source} <span foreground='#fab387'>{icon} </span>{volume}%",
-        "format-muted": "{format_source} <span foreground='#f63932ff'>󰝟</span> ",
+        "format-muted": "{format_source} <span foreground='#f63932ff'>󰝟</span>",
         "format-source": "<span foreground='#fab387'></span>",
         "format-source-muted": "<span foreground='#f63932ff'></span>",
         "format-icons": {
